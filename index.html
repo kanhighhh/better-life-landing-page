@@ -384,26 +384,26 @@
     </a>
   </div>
   <div style="max-width: 400px; margin: 0 auto;">
-    <form id="caregiverForm" onsubmit="saveData(event)" autocomplete="off">
-      <label for="name" style="font-weight:500;margin-bottom:8px;">Name</label>
-      <input type="text" id="name" name="name" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
+    <form action="https://formspree.io/f/yourformid" method="POST" autocomplete="off">
+  <label for="name" style="font-weight:500;margin-bottom:8px;">Name</label>
+  <input type="text" id="name" name="name" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
 
-      <label for="email" style="font-weight:500;margin-bottom:8px;">Email</label>
-      <input type="email" id="email" name="email" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
+  <label for="email" style="font-weight:500;margin-bottom:8px;">Email</label>
+  <input type="email" id="email" name="email" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
 
-      <label for="phone" style="font-weight:500;margin-bottom:8px;">Phone</label>
-      <input type="tel" id="phone" name="phone" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
+  <label for="phone" style="font-weight:500;margin-bottom:8px;">Phone</label>
+  <input type="tel" id="phone" name="phone" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
 
-      <div style="display: flex; gap: 14px;">
-        <div style="flex:2;">
-          <label for="city" style="font-weight:500;margin-bottom:8px;">City</label>
-          <input type="text" id="city" name="city" placeholder="Enter your city" required style="width:100%;padding:14px 12px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
-        </div>
-        <div style="flex:1;">
-          <label for="state" style="font-weight:500;margin-bottom:8px;">State</label>
-          <select id="state" name="state" required style="width:100%;padding:14px 12px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
-            <option value="">Select State</option>
-            <option value="AL">Alabama</option>
+  <div style="display: flex; gap: 14px;">
+    <div style="flex:2;">
+      <label for="city" style="font-weight:500;margin-bottom:8px;">City</label>
+      <input type="text" id="city" name="city" placeholder="Enter your city" required style="width:100%;padding:14px 12px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
+    </div>
+    <div style="flex:1;">
+      <label for="state" style="font-weight:500;margin-bottom:8px;">State</label>
+      <select id="state" name="state" required style="width:100%;padding:14px 12px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
+        <option value="">Select State</option>
+        <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
             <option value="AR">Arkansas</option>
@@ -453,36 +453,37 @@
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
-          </select>
-        </div>
-      </div>
-
-      <label for="service" style="font-weight:500;margin-bottom:8px;">Service Needed</label>
-      <select id="service" name="service" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
-        <option value="">Select Service</option>
-        <option value="Companion Care">Companion Care</option>
-        <option value="24-Hour Care">24-Hour Care</option>
-        <option value="Alzheimer’s/Dementia Care">Alzheimer’s/Dementia Care</option>
-        <option value="Personal Care">Personal Care</option>
-        <option value="Respite Care">Respite Care</option>
-        <option value="Disability Care">Disability Care</option>
       </select>
+    </div>
+  </div>
 
-      <button type="submit"
-        style="border: 2px solid #fff;
-               background: var(--red);
-               color: var(--white);
-               padding:14px 0;
-               border-radius:32px;
-               font-size:1.1rem;
-               font-weight:bold;
-               cursor:pointer;
-               width: 100%;
-               margin-top:12px;
-               transition: background 0.15s, color 0.15s;">
-        Request a Caregiver
-      </button>
-    </form>
+  <label for="service" style="font-weight:500;margin-bottom:8px;">Service Needed</label>
+  <select id="service" name="service" required style="width:100%;padding:14px 16px;margin-bottom:0;border-radius:8px;border:1px solid #ddd;font-size:1rem;box-sizing:border-box;">
+    <option value="">Select Service</option>
+    <option value="Companion Care">Companion Care</option>
+    <option value="24-Hour Care">24-Hour Care</option>
+    <option value="Alzheimer’s/Dementia Care">Alzheimer’s/Dementia Care</option>
+    <option value="Personal Care">Personal Care</option>
+    <option value="Respite Care">Respite Care</option>
+    <option value="Disability Care">Disability Care</option>
+  </select>
+
+  <button type="submit"
+    style="border: 2px solid #fff;
+           background: var(--red);
+           color: var(--white);
+           padding:14px 0;
+           border-radius:32px;
+           font-size:1.1rem;
+           font-weight:bold;
+           cursor:pointer;
+           width: 100%;
+           margin-top:12px;
+           transition: background 0.15s, color 0.15s;">
+    Request a Caregiver
+  </button>
+</form>
+
   </div>
 </section>
 
